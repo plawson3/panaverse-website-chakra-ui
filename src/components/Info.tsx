@@ -7,17 +7,14 @@ export default function Info() {
   const AnimatedBox = motion(Flex);
 
   return (
-    <Flex mx={["10", "10", "40", "40"]} my="8">
-      <Flex gap={10} alignItems="center" direction={["column","column","row","row"]} >
-        <Flex h={400} w={"100"}>
+    <Flex mx={["10", "10", "10", "40"]} my="8">
+      <Flex gap={[5, 5, 10, 10]} alignItems="center" direction={["column", "column", "row", "row"]} >
+        <Flex h={[200, 200, 400, 400]} w={["70", "80", "auto", "auto"]}>
           <AnimatedBox
-            // animate={{
-            //   scale: [0, 0.2, 0.4, 0.6, 0.8, 1],
-            //   rotate: [270, 180, 90, 60, 30, 0],
-            // }}
-            whileTap={{
-              scale: [1, 0.5],
-              transition: { duration: 1 },
+
+            whileHover={{
+              scale: [1, 1.1],
+              transition: { duration: 0.5 },
             }}
             transition={{
               duration: 0.4,
@@ -31,11 +28,11 @@ export default function Info() {
             />
           </AnimatedBox>
         </Flex>
-        <Flex direction={"column"} gap="10" justifyContent={"flex-start"}>
-          <Heading fontFamily={"sans-serif"} fontSize="4xl">
-            Web3 and metaverse technologies
+        <Flex direction={["column"]} gap={["2", "2", "5", "5"]} justifyContent={"flex-start"}>
+          <Heading fontFamily={"sans-serif"} fontSize={["2xl", "2xl", "4xl", "4xl"]}>
+            Web3 and Metaverse technologies
           </Heading>
-          <Text fontFamily={"sans-serif"} fontSize="xl">
+          <Text fontFamily={"sans-serif"} fontSize={["md", "md", "lg", "xl"]}>
             The internet is without a doubt the most important technological
             development in human history. Web3 and metaverse technologies expand
             the internet as we know it by introducing novel features and
@@ -46,5 +43,6 @@ export default function Info() {
         </Flex>
       </Flex>
     </Flex>
+
   );
 }
