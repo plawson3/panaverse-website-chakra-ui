@@ -19,7 +19,7 @@ const AnimatedBox = motion(Box);
 
 export default function Hero() {
   return (
-    <Flex direction={"column"}>
+    <Flex direction={"column"} mt={"24"} >
       <Heading
         textAlign={["left", "left", "center", "center"]}
         my="6"
@@ -88,11 +88,11 @@ export default function Hero() {
                 scale: [0, 0.2, 0.4, 0.6, 0.8, 1],
                 rotate: [270, 180, 90, 60, 30, 0],
               }}
-            //   whileTap={{
-            //     scale: [1, 0.8, 0.6, 0.4, 0.2, 0],
-            //     rotate: [0, 30, 60, 90, 180, 270],
-            //   }}
-            whileTap={{
+              //   whileTap={{
+              //     scale: [1, 0.8, 0.6, 0.4, 0.2, 0],
+              //     rotate: [0, 30, 60, 90, 180, 270],
+              //   }}
+              whileTap={{
                 scale: [1, 0.5],
                 transition: { duration: 1 },
               }}

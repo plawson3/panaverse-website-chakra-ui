@@ -106,9 +106,15 @@ export default function Info() {
     <Flex mx={["10", "10", "10", "40"]} gap="10" direction="column" my="8">
       {Data.map((item, index) => {
         return index % 2 == 0 ? (
-          <MyCard _title={item.title} _text={item.text} _image={item.image} />
+          <MyCard
+            key={index}
+            _title={item.title}
+            _text={item.text}
+            _image={item.image}
+          />
         ) : (
           <MyCardReverse
+            key={index}
             _title={item.title}
             _text={item.text}
             _image={item.image}

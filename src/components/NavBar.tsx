@@ -52,18 +52,18 @@ export default function MyDrawer() {
   return (
     <>
       <Flex
-        position="sticky"
+        position="fixed"
         top="0"
         left="0"
         // backgroundColor="#FAFAFACC"
         backdropFilter='blur(5px)'
         color="white"
-        // boxShadow="md"
-        zIndex="10"
+        boxShadow="sm"
+        zIndex="sticky"
         maxW={"fit-content"}
         w={["full", "full", "100vw", "100vw"]}
-        // mt={2}
         p="2"
+        // mt={10}
         justifyContent={"center"}
       >
         <HStack
