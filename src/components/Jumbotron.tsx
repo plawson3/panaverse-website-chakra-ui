@@ -38,11 +38,11 @@ export default function Jumbotron() {
             p={[10, 10, 20, 20]}
             bg={"white"}
           >
-            <Box borderRadius="full" p={[5, 5, 10, 10]} >
+            <Box borderRadius="full" p={[5, 5, 10, 10]}>
               <NextImage src={p_logo_simple} alt="panaverse logo simple" />
             </Box>
-            <Heading fontFamily={"sans-serif"}>What is Panaverse DAO</Heading>
-            <Text fontSize={["lg", "lg", "2xl", "2xl"]}>
+            <Heading fontSize={["lg", "xl", "3xl", "3xl"]}  fontFamily={"sans-serif"}>What is Panaverse DAO</Heading>
+            <Text fontSize={["md", "lg", "2xl", "2xl"]}>
               The Future of the Web is Web 3.0, Metaverse, and Edge Computing.
               Panaverse DAO is a movement to spread these technolgies globally.
               It is community of Web 3 and Metaverse developers, designers,
