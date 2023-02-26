@@ -15,7 +15,7 @@ const Index = () => {
       <Info />
       <Jumbotron />
       <Courses />
-      
+
     </Container>
   );
 };
